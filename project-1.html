@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
@@ -22,16 +23,15 @@
       </ul>
     </header>
     <div class="project-wrapper">
-      <aside class="project-aside">
+      <aside class="project-aside border">
         <div class="project-info">
-          <h1 class="project-title">Project One Title</h1>
-          <p class="project-description">A brief description of your project goes here. The temporary colours are like pencil lines in a sketch—they shape the layout, but you’ll paint over them later. Don’t worry if they clash—they’re just placeholders for now.</p>
-          <p class="project-description">This is a sticky sidebar (<em>.project-aside</em>). To remove the sticky sidebar, see <em>Sidebar on Large Devices</em> in style.css.</p>
-          <p class="project-description"><a href="project-lightbox.html">Lightbox</a> is now available for project pages plus a new <a href="project-full-width.html">Full Width Project Page Template</a>.</p>
+          <h1 class="project-title">Lightbox</h1>
+          <p class="project-description">Lightbox2 by Lokesh Dhakar is small javascript library used to overlay images on top of the current page. It's a snap to setup and works on all modern browsers. Click on an image to see it in action.</p>
+          <p class="project-description">“Consider who will look at your portfolio and – crucially – how long they're likely to spend on it. They're more than likely to be time-pressed people who want to decide in a matter of minutes, if not seconds. So how you put your portfolio together should recognise that essential fact.” — Creative Boom</p>
         </div>
         <ul class="project-navigation">
           <li class="arrow">
-            <a href="project-3.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i></a>
+            <a href="project-1.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i></a>
           </li>
           <li class="arrow">
             <a href="project-2.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i></a>
@@ -39,9 +39,11 @@
         </ul>
       </aside>
       <main class="project-details">
-        <figure class="project-image border">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
+        <a href="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" data-lightbox="project-1" data-title="Single Image">
+          <figure class="project-image border">
+            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
+          </figure>
+        </a>
         <div class="project-description-container">
           <div class="project-title col-2">
             <h2>Optional Text Block</h2>
@@ -49,39 +51,16 @@
           </div>
           <div class="project-description col-2"><p>To create additional project pages, copy this file and rename it to something else. Adjust the hyperlinks on the arrows to go to the right pages.</p></div>
         </div>
-        <figure class="project-image">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <figure class="project-image">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <div class="project-description-container">
-          <div class="project-title col-2">
-            <h2>Embed Video!</h2>
-            <h3>Faster loading time is an advantage that’s impossible to overlook.</h3>
-          </div>
-          <div class="project-description col-2"><p>Embedded videos from platforms like Vimeo boost your site’s speed and SEO, keeping visitors engaged without extra load. When hosted on powerful platforms like YouTube or Vimeo, your embedded videos load much faster than if self-hosted.</p></div>
-        </div>
-        <div class="project-video-container"><iframe src="https://player.vimeo.com/video/228122256" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="responsive-iframe"></iframe></div>
-        <div class="project-image-container">
+        <a href="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" data-lightbox="set-1" data-title="Image Set 1">
           <figure class="project-image">
             <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
           </figure>
+        </a>
+        <a href="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" data-lightbox="set-1" data-title="Image Set 1">
           <figure class="project-image">
             <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
           </figure>
-        </div>
-        <figure class="project-image border">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <div class="project-image-container">
-          <figure class="project-image">
-            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-          </figure>
-          <figure class="project-image">
-            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-          </figure>
-        </div>
+        </a>
       </main>
     </div>
     <ul class="footer-global">
@@ -89,7 +68,6 @@
         <h2>Let's Connect!</h2>
         <p>Feel free to reach out with any questions, collaborations, or just to chat about design.</p>
       </li>
-
       <li class="footer-highlights">
         <h2>Awards & Recognition</h2>
         <ul class="footer-awards-list">
@@ -121,9 +99,8 @@
         </script>
       </li>
     </ul>
-
     <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
-
+    <script src="./lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script>
       myID = document.getElementById("myID");
 

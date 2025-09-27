@@ -32,11 +32,11 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Eczar Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
+/* Averia Gruesa Libre Font (for headers or special text) */
+@import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap');
 
-/* Rubik Font (clean and modern for body text) */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
+/* Source Sans 3 Font (clean and modern for body text) */
+@import  url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* Inter Font (great for readability and minimal design) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -64,8 +64,6 @@
 /* File for animation effects that make elements blink */
 @import url("make-something-blink.css");
 
-/* File for adding a smooth animated gradient background */
-@import url("animated-gradient.css");
 
 /* File for adding a glitch animation to your 404 error page */
 @import url("error.css");
@@ -108,47 +106,45 @@
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
-  --color-accent-primary: #5200ff;
-  --color-accent-secondary: #ff057c;
-  --color-overlay-primary: #5200ff;
+  --color-accent-primary: #222;
+  --color-accent-secondary: #0D00FF;
+  --color-overlay-primary: #222;
   --color-highlight: lemonchiffon;
-  --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
+  --color-fallback: #0D00FF; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #222;
+  --h2-color: #222;
+  --h3-color: #222;
+  --h4-color: #222;
+  --h5-color: #222;
+  --h6-color: #222;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #5200ff;
+  --color-text-project-title: #222;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #5200ff;
+  --color-link: #111;
   --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link-visited: #0D00FF;
   /* Navigation */
-  --color-nav-link: #5200ff;
+  --color-nav-link: #111;
   --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
+  --color-nav-arrow: #0D00FF;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-arrow-stroke: #0D00FF;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
-  --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: lemonchiffon;
-  --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
+  --color-bg-sidebar-project: f5f5f5;
+  --color-bg-sidebar-work: f5f5f5;
   --color-gradient-project-details: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
   /* Special Elements */
   --color-icon-heart: darkred;
@@ -1099,7 +1095,7 @@ a.nav-link-primary:hover {
 .project-details {
   width: 100%;
   padding: var(--padding-small);
-  background: var(--color-gradient-project-details); /* TODO: Remove gradient background if you prefer a simpler design */
+  background: var(--color-primary-project-details); 
 }
 
 /* Previous/Next Arrow Styles */
@@ -1161,40 +1157,6 @@ a.nav-link-primary:hover {
 
 /* Holding page styles */
 
-.holding-page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--color-bg-holding-page)), var(--image-noise-texture);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
-}
-
-.holding-page-animation {
-  margin-bottom: 1rem;
-}
-
-.holding-page-title {
-  font-size: 1.5rem;
-  color: var(--color-text-holding-title);
-}
-
-.holding-page-footer {
-  display: grid;
-  place-items: center;
-  min-height: 10vh;
-  width: 100%;
-}
-
-.holding-page-copyright {
-  font-size: 0.8rem; /* Smaller font size for copyright text */
-  color: var(--color-text-holding-footer); /* Custom color for the footer text */
-  margin-bottom: 0; /* Removes default margin from the bottom of the copyright text */
-}
 
 /*
 ███████ ██████  ██████   ██████  ██████  
