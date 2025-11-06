@@ -9,12 +9,47 @@
 
 <url>
   <loc>https://auwchie.com/</loc>
-  <lastmod>2025-11-06T22:34:07+00:00</lastmod>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://auwchie.com/index.html</loc>
-  <lastmod>2025-11-06T22:34:07+00:00</lastmod>
+  <loc>https://auwchie.com/play</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/about</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/project-1</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/project-2</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/project-3</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/project-4</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/project-5</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://auwchie.com/project-6</loc>
+  <lastmod>2025-11-06T22:47:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
