@@ -126,6 +126,7 @@
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
+ --color-text-project-category-black: #222;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
   --color-text-project-title: #222;
@@ -515,7 +516,14 @@ em {
 
 /* 🏷️ Project category label — displays the type or role of the project */
 .work-grid-project-category {
+    font-family: var(--font-family-project-title);
   color: var(--color-text-project-category);
+  text-transform: uppercase;
+}
+.work-grid-project-category-black {
+    font-family: var(--font-family-project-title);
+  color: var(--color-text-project-category-black);
+  text-transform: uppercase;
 }
 
 /*
