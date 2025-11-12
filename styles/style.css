@@ -477,7 +477,7 @@ font-size: 1.5rem;
 
 /* Project description text — pairs with the project title */
 .project-description {
-  font-size: 1.225rem;
+  font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -512,11 +512,13 @@ font-size: 1.5rem;
     font-family: var(--font-family-project-title);
   color: var(--color-text-project-category);
   text-transform: uppercase;
+  margin-top: 1.5rem;
 }
 .work-grid-project-category-black {
     font-family: var(--font-family-project-title);
   color: var(--color-text-project-category-black);
   text-transform: uppercase;
+   margin-top: 1.5rem;
 }
 
 /*
@@ -1152,12 +1154,25 @@ inset-block-start: 0rem;
 /* Container for project description */
 .project-description-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   padding: var(--padding-small);
   width: 100%;
-  margin-bottom: 1rem; /* Space below the description */
+}
+
+.project-description-main {
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  font-family: var(--font-family-body);
+   text-transform: none;
+}
+
+.project-description-title {
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
 }
 
 .project-mini-me {
@@ -1165,13 +1180,9 @@ inset-block-start: 0rem;
     width: 100%;
   padding: var(--padding-small);  
 justify-content: center;
+margin-bottom: 1rem; 
 }
 
-/* Column styles for two-column layouts */
-.col-2 {
-  width: 100%;
-  padding: var(--padding-small);
-}
 
 /* Project image styling */
 .project-image {
