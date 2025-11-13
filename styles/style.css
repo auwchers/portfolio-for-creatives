@@ -33,13 +33,13 @@
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
 /* Inter Tight Medium Font (for headers or special text) */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;1,500&display=swap");
 
 /* Noto Serif Font (clean and modern for body text) */
-@import  url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap");
 
 /* Inter Tight Regular Font (great for readability and minimal design) */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap");
 
 /*
 
@@ -97,10 +97,10 @@
   --color-text-primary: #222;
   --color-text-secondary: #333;
   --color-accent-primary: #222;
-  --color-accent-secondary: #0D00FF;
+  --color-accent-secondary: #0d00ff;
   --color-overlay-primary: #222;
   --color-highlight: lemonchiffon;
-  --color-fallback: #0D00FF; /* Fallback color for glitch effect on 404 page */
+  --color-fallback: #0d00ff; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #fdfdfd;
@@ -116,28 +116,33 @@
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
- --color-text-project-category-black: #222;
+  --color-text-project-category-black: #222;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
   --color-text-project-title: #222;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
   --color-link: #111;
-  --color-link-hover: #0D00FF;
+  --color-link-hover: #0d00ff;
   --color-link-visited: #111;
   /* Navigation */
   --color-nav-link: #111;
-  --color-nav-link-hover: #0D00FF;
+  --color-nav-link-hover: #0d00ff;
   --color-nav-arrow: #111;
-  --color-nav-arrow-hover: #0D00FF;
+  --color-nav-arrow-hover: #0d00ff;
   --color-nav-arrow-stroke: #111;
-  --color-nav-arrow-stroke-hover: #0D00FF;
+  --color-nav-arrow-stroke-hover: #0d00ff;
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
   --color-bg-sidebar-project: f5f5f5;
   --color-bg-sidebar-work: f5f5f5;
-  --color-gradient-project-details: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  --color-gradient-project-details: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -212,7 +217,9 @@ body {
 /* ------------------------------- */
 
 ::selection {
-  background: var(--color-bg-selection); /* Uses your custom color for highlighted text */
+  background: var(
+    --color-bg-selection
+  ); /* Uses your custom color for highlighted text */
 }
 
 /* ---------------------------------------- */
@@ -261,7 +268,6 @@ svg {
 .width-two-thirds {
   width: 100%;
 }
-
 
 /* ---------------------- */
 /* ✍️  Typography Helpers */
@@ -454,9 +460,10 @@ em {
 /* Main hero headline — usually sits in the intro section */
 .hero-headline {
   color: var(--color-overlay-primary); /* Uses your brand's dominant color */
-  max-width: 40ch; /* Optimal line length for readability (~40 characters) */
+  width: 100%; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
+  border: 1px solid hotpink;
 }
 
 /* Large project title — appears on individual project pages */
@@ -468,7 +475,7 @@ em {
 }
 
 .project-subtitle {
-font-size: 1.5rem;
+  font-size: 1.5rem;
   font-family: var(--font-family-project-title);
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
@@ -509,16 +516,16 @@ font-size: 1.5rem;
 
 /* 🏷️ Project category label — displays the type or role of the project */
 .work-grid-project-category {
-    font-family: var(--font-family-project-title);
+  font-family: var(--font-family-project-title);
   color: var(--color-text-project-category);
   text-transform: uppercase;
   margin-top: 1.5rem;
 }
 .work-grid-project-category-black {
-    font-family: var(--font-family-project-title);
+  font-family: var(--font-family-project-title);
   color: var(--color-text-project-category-black);
   text-transform: uppercase;
-   margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 /*
@@ -637,11 +644,15 @@ a.nav-link-primary:hover {
   min-height: 6rem; /* Space reserved for logo + nav */
 }
 
+.break {
+  display: block;
+}
 .hero-andy-pose {
- width: 15%;
- position: absolute;
-inset-inline-start: 23rem;
-inset-block-start: 2rem;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  width: 15%;
+  border: 3px solid var(--color-accent-secondary);
 }
 .nav-branding {
   display: flex;
@@ -685,17 +696,18 @@ inset-block-start: 2rem;
   fill: #0d00ff;
 }
 
-
 .hero-headline-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
   gap: 1rem;
-  align-items: left;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--padding-tiny);
   text-align: left; /* Keeps text left-aligned */
+  border: 1px solid black;
+  position: relative;
 }
 
 .hero-icon {
@@ -739,7 +751,9 @@ inset-block-start: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--color-bg-full-width); /* Background color for full-width sections */
+  background: var(
+    --color-bg-full-width
+  ); /* Background color for full-width sections */
   margin-bottom: 1rem;
 }
 
@@ -793,27 +807,31 @@ inset-block-start: 2rem;
 .portfolio,
 .project-wrapper,
 .work-sidebar-wrapper {
-  padding: var(--padding-tiny); /* Padding to keep content from touching edges */
+  padding: var(
+    --padding-tiny
+  ); /* Padding to keep content from touching edges */
 }
 
 .hanging-andy-pose {
- width: 25%;
- position: absolute;
-inset-inline-start: 25rem;
-inset-block-start: 0rem;
+  width: 25%;
+  position: absolute;
+  inset-inline-start: 25rem;
+  inset-block-start: -1rem;
 }
 
 .sitting-andy-pose {
- width: 25%;
- position: absolute;
-inset-inline-start: 1rem;
-inset-block-start: 0rem;
+  width: 25%;
+  position: absolute;
+  inset-inline-start: -5rem;
+  inset-block-start: -6rem;
 }
 
 /* Work Sidebar on Mobile */
 .work-sidebar {
   width: 100%;
-  background: var(--color-bg-sidebar-work); /* Background color for the sidebar */
+  background: var(
+    --color-bg-sidebar-work
+  ); /* Background color for the sidebar */
 }
 
 /* Main Work Area with Sidebar on Mobile */
@@ -824,7 +842,10 @@ inset-block-start: 0rem;
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Creates a responsive grid */
   grid-gap: 1rem; /* Space between grid items */
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
@@ -836,6 +857,16 @@ inset-block-start: 0rem;
   position: relative; /* Needed to position the overlay */
 }
 
+/* Grayscale filter with full-colour on hover and tap */
+
+.work-page-grid-item a.grayscale img {
+  filter: grayscale(100);
+}
+
+.work-page-grid-item > a.grayscale:active img,
+.work-page-grid-item > a.grayscale:hover img {
+  filter: grayscale(0);
+}
 /* Project container for background and padding */
 .project-container {
   background: var(--color-accent-primary); /* Set project background color */
@@ -938,12 +969,12 @@ inset-block-start: 0rem;
 
 .about-link {
   font-family: var(--font-family-project-title);
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .about-bold {
   font-family: var(--font-family-heading);
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -979,30 +1010,30 @@ inset-block-start: 0rem;
 /* -------------------------------------------------------------------------- */
 
 .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: column;
-    min-height: auto; /* Allows footer to expand based on content, no fixed height */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: auto; /* Allows footer to expand based on content, no fixed height */
   padding: var(--padding-small); /* Internal spacing */
 }
 .footer-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 .footer-socials {
-    display: flex;
-    gap: 0.75rem;
-    padding-left: 4rem;
+  display: flex;
+  gap: 0.75rem;
+  padding-left: 4rem;
 }
 .footer-divider {
-    width: 100%;
-    padding-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 .footer-bottom {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
@@ -1075,7 +1106,7 @@ inset-block-start: 0rem;
 .footer-fineprint {
   font-size: 0.875rem; /* Slightly smaller for disclaimers or captions */
   color: var(--color-text-secondary); /* Themed color */
- font-family: var(--font-family-project-title);
+  font-family: var(--font-family-project-title);
   text-transform: uppercase;
   text-align: center;
 }
@@ -1164,7 +1195,7 @@ inset-block-start: 0rem;
   display: flex;
   font-size: 1.2rem;
   font-family: var(--font-family-body);
-   text-transform: none;
+  text-transform: none;
 }
 
 .project-description-title {
@@ -1177,12 +1208,11 @@ inset-block-start: 0rem;
 
 .project-mini-me {
   display: flex;
-    width: 100%;
-  padding: var(--padding-small);  
-justify-content: center;
-margin-bottom: 1rem; 
+  width: 100%;
+  padding: var(--padding-small);
+  justify-content: center;
+  margin-bottom: 1rem;
 }
-
 
 /* Project image styling */
 .project-image {
@@ -1196,7 +1226,7 @@ margin-bottom: 1rem;
 .project-details {
   width: 100%;
   padding: var(--padding-small);
-  background: var(--color-primary-project-details); 
+  background: var(--color-primary-project-details);
 }
 
 /* Previous/Next Arrow Styles */
@@ -1235,6 +1265,8 @@ margin-bottom: 1rem;
 
 /* Blog and Resume page styles */
 
+/*
+
 ██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
 ██   ██ ██    ██ ██      ██   ██ ██ ████   ██ ██       
 ███████ ██    ██ ██      ██   ██ ██ ██ ██  ██ ██   ███ 
@@ -1244,7 +1276,6 @@ margin-bottom: 1rem;
 */
 
 /* Holding page styles */
-
 
 /*
 ███████ ██████  ██████   ██████  ██████  
@@ -1337,6 +1368,28 @@ to keep your styles reusable and consistent.
 
 @media (min-width: 768px) {
   /* TODO: Adjust  layout for tablets */
+  .hero-andy-pose {
+    position: absolute;
+    top: 20%;
+    right: 60%;
+    width: 15%;
+    background: rgb(0, 128, 0, 0.5);
+  }
+  .hanging-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: 25rem;
+    inset-block-start: -1rem;
+    background: rgb(0, 128, 0, 0.5);
+  }
+
+  .sitting-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: -5rem;
+    inset-block-start: -6rem;
+    background: rgb(0, 128, 0, 0.5);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1346,6 +1399,28 @@ to keep your styles reusable and consistent.
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
 
+  .hero-andy-pose {
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    width: 15%;
+    background: rgb(255, 255, 0, 0.5);
+  }
+  .hanging-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: 25rem;
+    inset-block-start: -1rem;
+    background: rgb(255, 255, 0, 0.5);
+  }
+
+  .sitting-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: -5rem;
+    inset-block-start: -6rem;
+    background: rgb(255, 255, 0, 0.5);
+  }
   .flex-row {
     flex-direction: row; /* Changes to row layout on larger screens */
   }
@@ -1390,10 +1465,10 @@ to keep your styles reusable and consistent.
   }
 
   .hero-headline-wrapper {
-    padding-top: var(--padding-jumbo);
-    padding-bottom: var(--padding-jumbo);
+    padding-top: var(--padding-tiny);
+    padding-bottom: var(--padding-tiny);
     padding-left: var(--padding-tiny);
-    padding-right: var(--padding-ultra);
+    padding-right: var(--padding-tiny);
   }
   .error-headline-wrapper {
     padding-top: var(--padding-small);
@@ -1411,17 +1486,6 @@ to keep your styles reusable and consistent.
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
-  }
-
-  /* Grayscale filter with full-colour on hover and tap */
-
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
-  }
-
-  .work-page-grid-item > a.grayscale:active img,
-  .work-page-grid-item > a.grayscale:hover img {
-    filter: grayscale(0);
   }
 
   /* Padding around work grid and project page */
@@ -1498,6 +1562,11 @@ to keep your styles reusable and consistent.
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
+  .about-contact {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: lemonchiffon;
+  }
 
   /* ------------------------------- */
   /* 🖥️ FOOTER GRID - DESKTOP LAYOUT */
@@ -1560,7 +1629,28 @@ to keep your styles reusable and consistent.
 
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
+  .hero-andy-pose {
+    position: absolute;
+    top: 18%;
+    right: 35%;
+    width: 15%;
+    background: rgb(0, 0, 255, 0.5);
+  }
+  .hanging-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: 25rem;
+    inset-block-start: -1rem;
+    background: rgb(0, 0, 255, 0.5);
+  }
 
+  .sitting-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: -5rem;
+    inset-block-start: -6rem;
+    background: rgb(0, 0, 255, 0.5);
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
@@ -1570,7 +1660,28 @@ to keep your styles reusable and consistent.
 
 @media (min-width: 1400px) {
   /* TODO: Add styles here for XX-large devices. */
+  .hero-andy-pose {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    width: 15%;
+    background: rgb(128, 0, 128, 0.5);
+  }
+  .hanging-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: 25rem;
+    inset-block-start: -1rem;
+    background: rgb(128, 0, 128, 0.5);
+  }
 
+  .sitting-andy-pose {
+    width: 25%;
+    position: absolute;
+    inset-inline-start: -5rem;
+    inset-block-start: -6rem;
+    background: rgb(128, 0, 128, 0.5);
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
