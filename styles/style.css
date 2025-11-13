@@ -426,12 +426,6 @@ h6 {
   color: var(--h6-color);
 }
 
-h7 {
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: var(--h7-color);
-}
 
 /* ------------------------------------------------------------------ */
 /* 📝 Paragraph and Text Styles                                       */
@@ -463,7 +457,6 @@ em {
   width: 100%; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-  border: 1px solid hotpink;
 }
 
 /* Large project title — appears on individual project pages */
@@ -636,7 +629,7 @@ a.nav-link-primary:hover {
 
 .hero {
   width: 100%;
-  min-height: 80vh; /* Takes up most of the screen height */
+  min-height: 70vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
 }
@@ -649,10 +642,9 @@ a.nav-link-primary:hover {
 }
 .hero-andy-pose {
   position: absolute;
-  top: 20%;
-  right: 40%;
-  width: 15%;
-  border: 3px solid var(--color-accent-secondary);
+  top: 28%;
+  right: 1%;
+  width: 25%;
 }
 .nav-branding {
   display: flex;
@@ -706,7 +698,6 @@ a.nav-link-primary:hover {
   align-items: center;
   padding: var(--padding-tiny);
   text-align: left; /* Keeps text left-aligned */
-  border: 1px solid black;
   position: relative;
 }
 
@@ -815,15 +806,15 @@ a.nav-link-primary:hover {
 .hanging-andy-pose {
   width: 25%;
   position: absolute;
-  inset-inline-start: 25rem;
-  inset-block-start: -1rem;
+    top: -3%;
+  right: 5%;
 }
 
 .sitting-andy-pose {
   width: 25%;
   position: absolute;
-  inset-inline-start: -5rem;
-  inset-block-start: -6rem;
+  top: -35%;
+  right: 83%;
 }
 
 /* Work Sidebar on Mobile */
@@ -1037,6 +1028,15 @@ a.nav-link-primary:hover {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
+}
+
+.footer-caption {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #222;
+  font-family: var(--font-family-body);
+
 }
 /* -------------------------------------------------------------------------- */
 /* 🌊 FULL-WIDTH BOTTOM SECTION                                               */
@@ -1364,31 +1364,56 @@ to keep your styles reusable and consistent.
 
 /* Media Queries for Layout Adjustments */
 
+@media (min-width: 494px) {
+  /* TODO: Adjust  layout for tablets */
+  .hero-andy-pose {
+    position: absolute;
+    top: 31%;
+    right: 23%;
+    width: 18%;
+  }
+  .hanging-andy-pose {
+    width: 25%;
+    position: absolute;
+    top: -3%;
+    right: 10%;
+  }
+
+  .sitting-andy-pose {
+    width: 25%;
+    position: absolute;
+    top: -33%;
+    right: 85%;
+  }
+
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
   /* TODO: Adjust  layout for tablets */
   .hero-andy-pose {
     position: absolute;
-    top: 20%;
+    top: 30%;
     right: 60%;
-    width: 15%;
-    background: rgb(0, 128, 0, 0.5);
+    width: 10%;
   }
   .hanging-andy-pose {
     width: 25%;
     position: absolute;
-    inset-inline-start: 25rem;
-    inset-block-start: -1rem;
-    background: rgb(0, 128, 0, 0.5);
+    top: -3%;
+    right: 1%;
   }
 
   .sitting-andy-pose {
     width: 25%;
     position: absolute;
-    inset-inline-start: -5rem;
-    inset-block-start: -6rem;
-    background: rgb(0, 128, 0, 0.5);
+    top: -33%;
+    right: 86%;
+  }
+
+  .hero {
+    max-height: 20vh;
   }
 }
 
@@ -1401,25 +1426,23 @@ to keep your styles reusable and consistent.
 
   .hero-andy-pose {
     position: absolute;
-    top: 25%;
-    right: 20%;
+    top: 15%;
+    right: 37%;
     width: 15%;
-    background: rgb(255, 255, 0, 0.5);
+
   }
   .hanging-andy-pose {
     width: 25%;
     position: absolute;
-    inset-inline-start: 25rem;
-    inset-block-start: -1rem;
-    background: rgb(255, 255, 0, 0.5);
+    top: -3%;
+    right: 1%;
   }
 
   .sitting-andy-pose {
     width: 25%;
     position: absolute;
-    inset-inline-start: -5rem;
-    inset-block-start: -6rem;
-    background: rgb(255, 255, 0, 0.5);
+    top: -32%;
+    right: 87%;
   }
   .flex-row {
     flex-direction: row; /* Changes to row layout on larger screens */
@@ -1461,7 +1484,7 @@ to keep your styles reusable and consistent.
   }
 
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
   }
 
   .hero-headline-wrapper {
@@ -1631,25 +1654,22 @@ to keep your styles reusable and consistent.
   /* TODO: Add styles here for X-large devices. */
   .hero-andy-pose {
     position: absolute;
-    top: 18%;
-    right: 35%;
+    top: 10%;
+    right: 45%;
     width: 15%;
-    background: rgb(0, 0, 255, 0.5);
   }
   .hanging-andy-pose {
     width: 25%;
     position: absolute;
-    inset-inline-start: 25rem;
-    inset-block-start: -1rem;
-    background: rgb(0, 0, 255, 0.5);
+    top: -3%;
+    right: 1%;
   }
 
   .sitting-andy-pose {
     width: 25%;
     position: absolute;
-    inset-inline-start: -5rem;
-    inset-block-start: -6rem;
-    background: rgb(0, 0, 255, 0.5);
+    top: -32%;
+    right: 87%;
   }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -1662,25 +1682,22 @@ to keep your styles reusable and consistent.
   /* TODO: Add styles here for XX-large devices. */
   .hero-andy-pose {
     position: absolute;
-    top: 20%;
-    right: 40%;
-    width: 15%;
-    background: rgb(128, 0, 128, 0.5);
+    top: 11%;
+    right: 56%;
+    width: 12%;
   }
   .hanging-andy-pose {
-    width: 25%;
+    width: 23%;
     position: absolute;
-    inset-inline-start: 25rem;
-    inset-block-start: -1rem;
-    background: rgb(128, 0, 128, 0.5);
+    top: -3%;
+    right: -3%;
   }
 
   .sitting-andy-pose {
-    width: 25%;
+    width: 23%;
     position: absolute;
-    inset-inline-start: -5rem;
-    inset-block-start: -6rem;
-    background: rgb(128, 0, 128, 0.5);
+    top: -30%;
+    right: 88%;
   }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
