@@ -1364,6 +1364,7 @@ to keep your styles reusable and consistent.
 
 /* Media Queries for Layout Adjustments */
 
+
 @media (min-width: 494px) {
   /* TODO: Adjust  layout for tablets */
   .hero-andy-pose {
@@ -1410,10 +1411,6 @@ to keep your styles reusable and consistent.
     position: absolute;
     top: -33%;
     right: 86%;
-  }
-
-  .hero {
-    max-height: 20vh;
   }
 }
 
